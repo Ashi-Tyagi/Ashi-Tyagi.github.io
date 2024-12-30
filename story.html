@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Story</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="story-container">
+    <!-- Story Display Area -->
+    <div id="story-display">
+      <div id="story-text">
+        <p class="system-response">Welcome to your journey! Your choices will shape the outcome of your story.</p>
+      </div>
+    </div>
+
+    <!-- Choices Area -->
+    <div id="choices-container">
+      <button class="choice-button" data-choice="1">Option 1</button>
+      <button class="choice-button" data-choice="2">Option 2</button>
+      <button class="choice-button" data-choice="3">Option 3</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div id="navigation">
+      <button id="restart-story">Restart</button>
+      <button id="exit-story">Exit</button>
+    </div>
+  </div>
+
+  <div id="inventory">
+    <h3>Inventory</h3>
+    <ul id="inventory-list">
+      <!-- Items will be dynamically added -->
+    </ul>
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>

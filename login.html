@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Sign-Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="auth-container">
+    <h1>Welcome Back!</h1>
+    <div id="auth-options">
+      <!-- Login Form -->
+      <div id="login-form">
+        <h2>Login</h2>
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" placeholder="Enter your username">
+        
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="Enter your password">
+        
+        <button id="login-button">Login</button>
+        <p><a id="forgot-password-link" href="#">Forgot Password?</a></p>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider">OR</div>
+
+      <!-- Sign-Up Form -->
+      <div id="signup-form">
+        <h2>Sign-Up</h2>
+        <label for="signup-firstname">First Name</label>
+        <input type="text" id="signup-firstname" placeholder="Enter your first name">
+        
+        <label for="signup-lastname">Last Name</label>
+        <input type="text" id="signup-lastname" placeholder="Enter your last name">
+        
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" placeholder="Enter your email">
+        
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" placeholder="Choose a username">
+        
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" placeholder="Choose a password">
+        
+        <button id="signup-button">Sign-Up</button>
+      </div>
+    </div>
+
+    <button id="back-to-home">Back to Home</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

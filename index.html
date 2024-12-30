@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive App - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Home Screen -->
+  <div id="homeScreen" class="section">
+    <h1>Welcome to Interactive App</h1>
+    <p>Join the most engaging platform to explore your journey through interactive stories and choices!</p>
+    <div class="button-container">
+      <button id="loginButton" class="btn">Login</button>
+      <button id="signupButton" class="btn">Sign Up</button>
+    </div>
+    <button id="helpButton" class="link-btn">Help</button>
+    <button id="forgotPasswordButton" class="link-btn">Forgot Password?</button>
+  </div>
+
+  <!-- Login Section -->
+  <div id="loginSection" class="section hidden">
+    <h2>Login</h2>
+    <input type="text" id="usernameInput" placeholder="Enter your username">
+    <input type="password" id="passwordInput" placeholder="Enter your password">
+    <button id="loginSubmitButton" class="btn">Submit</button>
+    <button id="backToHomeFromLogin" class="link-btn">Back</button>
+  </div>
+
+  <!-- Sign-Up Section -->
+  <div id="signUpSection" class="section hidden">
+    <h2>Sign Up</h2>
+    <input type="text" id="signupUsernameInput" placeholder="Choose a username">
+    <input type="password" id="signupPasswordInput" placeholder="Choose a password">
+    <input type="email" id="signupEmailInput" placeholder="Enter your email">
+    <button id="signUpSubmitButton" class="btn">Submit</button>
+    <button id="backToHomeFromSignUp" class="link-btn">Back</button>
+  </div>
+
+  <!-- Help Modal -->
+  <div id="helpModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeHelpButton" class="close">&times;</span>
+      <h3>About Interactive App</h3>
+      <p>Interactive App allows you to customize your journey, make meaningful choices, and explore personalized outcomes. Join us today!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
